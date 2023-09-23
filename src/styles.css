@@ -75,6 +75,7 @@
         }
 .tab-content {
        height: 615px;
+ background-color: #000;
        }
         /* Additional styles for result container */
         .result-container {
