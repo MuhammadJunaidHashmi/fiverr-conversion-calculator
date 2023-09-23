@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversion Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <ul class="tabs">
+      <li id="currency-tab" class="active-tab">
+        <img src="src/bank.png" height="15" alt="logo" /> Bank transfer
+      </li>
+      <li id="exchange-tab">
+        <img src="src/payoneer.png" height="15" alt="logo" /> Payoneer account
+      </li>
+    </ul>
+
+    <div class="tab-content" id="currency-conversion" style="height: 515px">
+      <div class="main">
+        <h1 style="font-size: 27px; display: inline">
+          fiverr<sub style="font-size: 15px; color: #1dbf73">o</sub> Conversion
+          Calculator
+        </h1>
+        <a
+          id="refresh-button"
+          style="border-radius: 10px; padding: 2px; background-color: #1dbf73"
+          class="refresh-button"
+          ><i class="fas fa-sync-alt"></i
+        ></a>
+      </div>
+      <div class="container">
+        <h1><img src="src/bank.png" height="20" alt="logo" /> Bank transfer</h1>
+        <div class="input-container">
+          <label for="ex">Select Exchange of ever $:</label>
+          <select id="ex">
+            <option value="8">Rs. 8</option>
+            <option value="9">Rs. 9</option>
+            <option value="10">Rs. 10</option>
+          </select>
+        </div>
+        <div class="result-container" id="resultSections">
+          <div class="input-container">
+            <label for="amounts">Enter Dollar Amount:</label>
+            <input
+              type="number"
+              style="width: 95%"
+              id="amounts"
+              placeholder="Enter amount"
+            />
+          </div>
+          <div class="input-container">
+            <label for="rate">Enter current $ Rate:</label>
+            <input
+              type="number"
+              style="width: 95%"
+              id="rate"
+              placeholder="Enter rate"
+            />
+          </div>
+          <button id="calculate">Calculate</button>
+          <strong> <div style="color: red" id="results"></div></strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content hidden" id="exchange-rate" style="height: 515px">
+      <div class="main">
+        <h1 style="font-size: 27px; display: inline">
+          fiverr<sub style="font-size: 15px; color: #1dbf73">o</sub> Conversion
+          Calculator
+        </h1>
+        <a
+          id="refresh-button"
+          style="border-radius: 10px; padding: 2px; background-color: #1dbf73"
+          class="refresh-button"
+          ><i class="fas fa-sync-alt"></i
+        ></a>
+      </div>
+      <div class="container">
+        <h1>
+          <img src="src/payoneer.png" height="20" alt="logo" /> Payoneer account
+        </h1>
+        <label for="amount" id="e">Enter Dollar Amount:</label>
+        <input
+          type="number"
+          style="width: 95%"
+          id="amount"
+          placeholder="Enter amount"
+        />
+        <button id="transferButton">Transfer to Payoneer</button>
+        <strong> <p id="error" style="color: red"></p></strong>
+        <div class="result-container" id="resultSection" style="display: none">
+          <div class="container">
+            <p class="result-label">Amount: <span id="result"></span>$</p>
+          </div>
+          <button id="transferToBankButton">JazzCash Fee</button>
+          <div id="transferBK">
+            <label for="exchangeRate"> Enter current $ Rate:</label>
+            <input
+              type="number"
+              style="width: 95%"
+              id="exchangeRate"
+              placeholder="Enter rate"
+            />
+            <button id="calculateExchangeButton">Calculate</button>
+            <strong> <p id="exchangeResult" style="color: red"></p></strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/script.js"></script>
+  
+  </body>
+</html>
