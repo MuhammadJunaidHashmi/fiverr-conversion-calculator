@@ -73,7 +73,9 @@
         button {
           padding: 5px;
         }
-
+.tab-content {
+       height: 615px;
+       }
         /* Additional styles for result container */
         .result-container {
           background-color: #f7f7f7;
