@@ -111,9 +111,9 @@
       }
 
       .tab-content {
-       background-color: #000;
-       height: 815px;
-       /*height: 515px;*/
+       background-color: #fff;
+     
+       height: 515px;
         display: none;
         padding: 20px;
        
