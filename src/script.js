@@ -160,7 +160,7 @@
           } else {
             exchangeResult.style.color = "red";
             exchangeResult.textContent =
-              "Please enter valid values for amount, current rate, and exchange.";
+              "Please enter valid values for amount.";
           }
         });
       });
