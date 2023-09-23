@@ -56,10 +56,7 @@
           max-width: 90%;
         }
 
-      .tab-content {
-       height: 815px;
-
-       }
+     
         /* Adjust padding for smaller input fields and buttons */
         input[type="number"],
         button {
@@ -75,6 +72,7 @@
           padding: 5px;
         }
 .tab-content {
+     background-color: #000;
        height: 815px;
 
        }
