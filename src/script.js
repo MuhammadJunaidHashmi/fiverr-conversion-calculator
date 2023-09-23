@@ -175,3 +175,14 @@
             location.reload();
           }, 2000);
         });
+ document
+        .getElementById("refresh-buttons")
+        .addEventListener("click", function () {
+          // Add the 'active' class to start the animation
+          this.classList.add("active");
+
+          // Reload the page after a short delay (2 seconds in this example)
+          setTimeout(() => {
+            location.reload();
+          }, 2000);
+        });
