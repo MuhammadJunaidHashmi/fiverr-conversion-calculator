@@ -72,8 +72,7 @@
           padding: 5px;
         }
 .tab-content {
-     background-color: #000;
-       height: 815px;
+    
 
        }
         /* Additional styles for result container */
@@ -112,10 +111,12 @@
       }
 
       .tab-content {
-       height: 515px;
+       background-color: #000;
+       height: 815px;
+       /*height: 515px;*/
         display: none;
         padding: 20px;
-        background-color: #fff;
+       
         box-shadow: 0 40px 0 rgba(0, 0, 0, 0.2);
         border-radius: 30px;
       }
