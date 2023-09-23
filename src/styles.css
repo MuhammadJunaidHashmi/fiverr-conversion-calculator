@@ -56,6 +56,9 @@
           max-width: 90%;
         }
 
+       .tab-content {
+       height: 615px;
+       }
         /* Adjust padding for smaller input fields and buttons */
         input[type="number"],
         button {
