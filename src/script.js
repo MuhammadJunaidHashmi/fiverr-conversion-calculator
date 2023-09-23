@@ -165,7 +165,7 @@
         });
       });
       document
-        .getElementsByClassName("refresh-buttons")
+        .getElementById("refresh-button")
         .addEventListener("click", function () {
           // Add the 'active' class to start the animation
           this.classList.add("active");
